@@ -234,11 +234,10 @@ Your VCN should now look identical to a VCN created with the VCN Wizard!
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
 
 * Learn more about VCNs [here.](https://www.oracle.com/cloud/networking/virtual-cloud-network/)
 
 
 ## Acknowledgements
-* **Authors** - Olivia Maxwell, Cloud Enginner; Taylor Rees, Cloud Engineer
+* **Authors** - Olivia Maxwell, Cloud Engineer; Taylor Rees, Cloud Engineer
 * **Last Updated By/Date** - Taylor Rees, August 2024
