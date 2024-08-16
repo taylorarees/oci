@@ -1,14 +1,14 @@
-# Title of the Lab
+# Connect to Compute Instances
 
 ## Introduction
 
-This lab walks you through connecting to the Bastion Host and then using that host as a jump server to acces the private instance. 
+This lab walks you through connecting to the Bastion Host and then using that host as a jump server to access the private instance. 
 
 Estimated Lab Time: 10 minutes
 
 ### About Bastion Host
 
-In this lab we will see how the BastionHost acts as a jump host. Once connected to the Bastion Host you will upload the SSH keys to be able to access the private insance created in the previous lab. 
+In this lab we will see how the BastionHost acts as a jump host. Once connected to the Bastion Host you will upload the SSH keys to be able to access the private insance created in the Lab 1. This will allow 
 
 ### Objectives
 
@@ -23,16 +23,15 @@ In this lab, you will:
 This lab assumes you have:
 * An Oracle Cloud account
 * All previous labs successfully completed
-* Have saved private SSH key generated in Lab 1
+* Private SSH key generated in Lab 1
 
 
 ## Task 1: SSH into instances
 
-(optional) Task 1 opening paragraph.
 
 1. Open Cloud Shell
 
-	![Image alt text](images/cloud-shell.png)
+	![Open Cloud Shell](images/cloud-shell.png)
 
 2. Navigate to ssh folder within Cloud Shell 
 
@@ -40,13 +39,14 @@ This lab assumes you have:
 cd .ssh
 ```
 
-3. SSH into Bastion Host to ensure connection.  
+3. SSH into Bastion Host to ensure connection.  <br><br>
+*be sure to replace text found in <> with their correct values*
 
 ```
 ssh -i <private_ssh_key> opc@<BastionHost_public_ip_address> 
 ```
 
-  ![Image alt text](images/ssh.png)
+  ![SSH into Bastion](images/ssh.png)
 4. Update SSH key for BastionHost 
 
 Navigate to SSH files
@@ -64,18 +64,19 @@ vim private_key
 Paste the private key generated in Lab 1
 
 Save the changes made to private_key file 
-hit escapte followed by the command bellow. 
+hit esc key followed by the command bellow 
 
 ```
 :wq!
 ```
-hit Enter.
+hit the Return key
 
-You can use the command ls to check to make sure the new file exists. 
+You can use the command **ls** to check to make sure the new file exists 
 
-![Image alt text](images/vim.png)
+![Terminal VIM](images/vim.png)
 
-5. SSH into private instance through Bation Host 
+5. SSH into private instance through Bation Host <br><br>
+*be sure to replace the private ip address with the actual IP address for your instance*
 
 ```
 ssh -i private_key opc@<private-1_private_ip_address> 
@@ -84,15 +85,14 @@ ssh -i private_key opc@<private-1_private_ip_address>
 You should now see that you have successfully navigated to the instnace private-1 
 
 
-![Image alt text](images/private.png)
+![Successful ssh](images/private1.png)
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
 
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+* Learn about self service Bastion vs Bastion as a Service [here](https://blogs.oracle.com/ateam/post/simplify-secure-access-to-oracle-workloads-using-bastions)
+
 
 ## Acknowledgements
-* **Authors** - Olivia Maxwell, Cloud Enginner; Taylor Rees, Cloud Engineer
+* **Authors** - Olivia Maxwell, Cloud Engineer; Taylor Rees, Cloud Engineer
 * **Last Updated By/Date** - Taylor Rees, August 2024

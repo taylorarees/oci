@@ -1,6 +1,18 @@
-# Title of the Lab
+# Create Compartment & VCN
 
 ## Introduction
+
+In this lab you will create a compartmentand a Virtual Cloud Network. Compartments are a logical collection of related resources. Compartments allow for organization and isolation of your cloud resources. It is recommended to never work directly in the root compartment in a tenancy. 
+
+In this lab we will also create a Virtual Cloud Network. A virtual cloud network (VCN) is a virtual, private network that closely resembles a traditional network, with firewall rules and specific types of communication gateways that you can choose. A VCN resides in a single OCI region and covers one or more CIDR blocks (IPv4 and IPv6, if enabled). 
+
+Each subnet consists of a contiguous range of IP addresses (for IPv4 and IPv6, if enabled) that do not overlap with other subnets in the VCN.
+
+In this lab we will be using the VCN Wizard to create our VCN, if you would like to skip using the wizard you can follow the alternative task at the end of this lab. 
+
+## Oracle Virtual Cloud Networks
+
+To learn more about Oracle's Virtual Cloud Networks, review the documentation [here.](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/Overview_of_VCNs_and_Subnets.htm) 
 
 
 Estimated Lab Time: 15 minutes
@@ -19,12 +31,8 @@ This lab assumes you have:
 * An Oracle Cloud account
 * All previous labs successfully completed
 
-
-
-
 ## Task 1: Create a compartment
 
-Compartments are a logical collection of related resources. Compartments allow for organization and isolation of your cloud resources.
 
 1. Navigate to Identity & Security and select Compartments
 
@@ -228,8 +236,8 @@ Your VCN should now look identical to a VCN created with the VCN Wizard!
 
 *(optional - include links to docs, white papers, blogs, etc)*
 
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+* Learn more about VCNs [here.](https://www.oracle.com/cloud/networking/virtual-cloud-network/)
+
 
 ## Acknowledgements
 * **Authors** - Olivia Maxwell, Cloud Enginner; Taylor Rees, Cloud Engineer

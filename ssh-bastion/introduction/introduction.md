@@ -2,15 +2,15 @@
 
 ## About this Workshop
 
-A Bastion Host acts as a single point of controlled access for authorized users. 
+A Bastion Host acts as a single point of controlled access for authorized users. The Bastion host becomes the only ingress path to internal sources to simplify security administration. This lab will show how easy it is to set up a Bastion Host an connect to a private instance. 
+
+  ![Bastion Diagram](images/arch.png)
 
 Estimated Workshop Time: 1 hour 
 
 
 
 ### Objectives
-
-*List objectives for the workshop*
 
 In this workshop, you will learn how to:
 * Generate SSH keys
@@ -24,12 +24,8 @@ In this workshop, you will learn how to:
 
 ## Learn More
 
-*(optional - include links to docs, white papers, blogs, etc)*
-
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
 
 ## Acknowledgements
-* **Authors** - Olivia Maxwell, Cloud Enginner; Taylor Rees, Cloud Engineer
+* **Authors** - Olivia Maxwell, Cloud Engineer; Taylor Rees, Cloud Engineer
 * **Last Updated By/Date** - Taylor Rees, August 2024
 
