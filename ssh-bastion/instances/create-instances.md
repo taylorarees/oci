@@ -27,7 +27,7 @@ This lab assumes you have:
 
 
 
-## Task 1: Create Public Compute Instance named BastionHost
+Task 1: Create Public Compute Instance named BastionHost
 
 Navigate to Compute Instances through the Oracle Cloud Console create your Public and Private Instances
 
@@ -91,7 +91,7 @@ Ensure your Instance is active by seeing the box has turned green & says 'RUNNIN
 
 ![Image alt text](images/FinishedBastionHost.png)
 
-## Task 2: Create your private instance.
+Task 2: Create your private instance.
 
 1. Navigate back to the Oracle Instances page. Click 'Create Instance' button to start creating your private instnace.
 
