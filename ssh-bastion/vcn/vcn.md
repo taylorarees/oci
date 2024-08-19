@@ -232,6 +232,8 @@ confirm that it has the same rules that we just created for the private subnet
 
 Your VCN should now look identical to a VCN created with the VCN Wizard!
 
+You can now proceed to the next lab.
+
 ## Learn More
 
 
