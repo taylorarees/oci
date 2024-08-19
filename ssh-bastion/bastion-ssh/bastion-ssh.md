@@ -26,7 +26,7 @@ This lab assumes you have:
 * Private SSH key generated in Lab 1
 
 
-## Task 1: SSH into instances
+Task 1: SSH into instances
 
 
 1. Open Cloud Shell
