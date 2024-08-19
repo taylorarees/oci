@@ -28,7 +28,7 @@
         },
         {
             "title": "Lab 3: Create Compute Instances",
-            "filename": "../../compute/compute.md"
+            "filename": "../../instances/create-instances.md"
         },
         {
             "title": "Lab 4: Access instance through SSH",
