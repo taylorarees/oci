@@ -142,3 +142,7 @@ Ensure your Instance is active by seeing the box has turned green & says 'RUNNIN
 ![Image alt text](images/PrivFinished.png)
 
 You can now proceed to the next lab.
+
+## Acknowledgements
+* **Authors** - Olivia Maxwell, Cloud Engineer; Taylor Rees, Cloud Engineer
+* **Last Updated By/Date** - Taylor Rees, August 2024
