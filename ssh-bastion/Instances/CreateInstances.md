@@ -140,3 +140,5 @@ Now click the 'Create' button at the bottom left of your screen to create the in
 Ensure your Instance is active by seeing the box has turned green & says 'RUNNING' underneath:
 
 ![Image alt text](images/PrivFinished.png)
+
+You can now proceed to the next lab.
