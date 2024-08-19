@@ -65,37 +65,37 @@ Leave the rest as default.
 
 Name your instance 'BastionHost':
 
-![Image alt text](images/1-bastion-host.png)
+![Name instance BastionHost](images/1-bastion-host.png)
 
 Ensure you are creating your compartment in your 'Demo' compartment:
 
-![Image alt text](images/demoCompartment.png)
+![Ensure correct compartment](images/demoCompartment.png)
 
 Ensure you are creating your instance in your Demo_VCN you created in Lab 2:
 
-![Image alt text](images/vcn-in-Demo.png)
+![Creating instance in correct VCN](images/vcn-in-Demo.png)
 
 Ensure you are creating your instance in your public subnet from Lab 2:
 
-![Image alt text](images/pubSub.png)
+![Ensure correct public subnet for Instance](images/pubSub.png)
 
 Click 'Paste public keys'. Paste your public SSH key that you generated from Lab 1:
 
-![Image alt text](images/pubSSH.png)
+![Paste your Public Keys](images/pubSSH.png)
 
 Now click the 'Create' button at the bottom left of your screen to create the instnace:
 
-![Image alt text](images/createCompInstance.png)
+![Finsih Creating Image](images/createCompInstance.png)
 
 Ensure your Instance is active by seeing the box has turned green & says 'RUNNING' underneath:
 
-![Image alt text](images/finishedBastionHost.png)
+![Ensure Instance is Activated](images/finishedBastionHost.png)
 
 Task 2: Create your private instance.
 
 1. Navigate back to the Oracle Instances page. Click 'Create Instance' button to start creating your private instnace.
 
-![Image alt text](images/privCreateInstance.png)
+![Create Private Instance](images/privCreateInstance.png)
 
 >* Refer to Task 1, Steps 1-2 to navigate back to the Oracle Instnaces Page
 
@@ -115,31 +115,31 @@ Leave the rest as default.
 
 Name your instance 'private-1':
 
-![Image alt text](images/1-priv-name.png)
+![Name Private Instance](images/1-priv-name.png)
 
 Ensure you are creating your compartment in your 'Demo' compartment:
 
-![Image alt text](images/privDemoComp.png)
+![Ensure Compartment is in Demo](images/privDemoComp.png)
 
 Ensure you are creating your instance in your Demo_VCN you created in Lab 2:
 
-![Image alt text](images/privVCN.png)
+![Ensure Instance is in DemoVCN](images/privVCN.png)
 
 Ensure you are creating your instance in your private subnet from Lab 2:
 
-![Image alt text](images/privSubnet.png)
+![Ensure Instance is in private subnet](images/privSubnet.png)
 
 Click 'Paste public keys'. Paste your public SSH key that you generated from Lab 1:
 
-![Image alt text](images/privSSH.png)
+![Paste public keys](images/privSSH.png)
 
-Now click the 'Create' button at the bottom left of your screen to create the instnace:
+Now click the 'Create' button at the bottom left of your screen to create the instance:
 
-![Image alt text](images/privCreate.png)
+![Create Private Instance](images/privCreate.png)
 
 Ensure your Instance is active by seeing the box has turned green & says 'RUNNING' underneath:
 
-![Image alt text](images/privFinished.png)
+![Ensure Active Instance](images/privFinished.png)
 
 You may now **proceed to the next lab.**
 
