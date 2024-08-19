@@ -33,7 +33,7 @@ Navigate to Compute Instances through the Oracle Cloud Console create your Publi
 
 1. Click on the hamburger icon ![Image alt text](images/sample2.png) in the top left corner of the OCI console Home page. 
 
-	![Image alt text](images/home.png)
+	![Image alt text](images/Home.png)
 
 	
 2. After clicking the hamburger icon ![Image alt text](images/sample2.png), select 'Compute'. Within the Compute tab, select 'Instances'.
@@ -42,11 +42,11 @@ Navigate to Compute Instances through the Oracle Cloud Console create your Publi
 
 3. Before creating your Public compute instnace, you need to ensure that you are in the correct compartment. The compartment that we previously created is called 'Demo'. You can see in the picture below that we are in the correct 'Demo' compartment.
 
-![Image alt text](images/consoleCompartment.png)
+![Image alt text](images/ConsoleCompartment.png)
 
 4. Click 'Create Instance'.
 
-![Image alt text](images/createInstance.png)
+![Image alt text](images/CreateInstance.png)
 
 5. Create your public Bastion Host Instance. 
 
@@ -65,37 +65,37 @@ Leave the rest as default.
 
 Name your instance 'BastionHost':
 
-![Image alt text](images/1-bastion-host.png)
+![Image alt text](images/1BastionHost.png)
 
 Ensure you are creating your compartment in your 'Demo' compartment:
 
-![Image alt text](images/demoCompartment.png)
+![Image alt text](images/DemoCompartment.png)
 
 Ensure you are creating your instance in your Demo_VCN you created in Lab 2:
 
-![Image alt text](images/vcn-in-Demo.png)
+![Image alt text](images/VCNinDemo.png)
 
 Ensure you are creating your instance in your public subnet from Lab 2:
 
-![Image alt text](images/pubSub.png)
+![Image alt text](images/PubSub.png)
 
 Click 'Paste public keys'. Paste your public SSH key that you generated from Lab 1:
 
-![Image alt text](images/pubSSH.png)
+![Image alt text](images/PubSSH.png)
 
 Now click the 'Create' button at the bottom left of your screen to create the instnace:
 
-![Image alt text](images/createCompInstance.png)
+![Image alt text](images/CreateCompInstance.png)
 
 Ensure your Instance is active by seeing the box has turned green & says 'RUNNING' underneath:
 
-![Image alt text](images/finishedBastionHost.png)
+![Image alt text](images/FinishedBastionHost.png)
 
 ## Task 2: Create your private instance.
 
 1. Navigate back to the Oracle Instances page. Click 'Create Instance' button to start creating your private instnace.
 
-![Image alt text](images/privCreateInstance.png)
+![Image alt text](images/PrivCreateInstance.png)
 
 >* Refer to Task 1, Steps 1-2 to navigate back to the Oracle Instnaces Page
 
@@ -115,28 +115,28 @@ Leave the rest as default.
 
 Name your instance 'private-1':
 
-![Image alt text](images/1-priv-name.png)
+![Image alt text](images/1PrivName.png)
 
 Ensure you are creating your compartment in your 'Demo' compartment:
 
-![Image alt text](images/privDemoComp.png)
+![Image alt text](images/PrivDemoComp.png)
 
 Ensure you are creating your instance in your Demo_VCN you created in Lab 2:
 
-![Image alt text](images/privVCN.png)
+![Image alt text](images/PrivVCN.png)
 
 Ensure you are creating your instance in your private subnet from Lab 2:
 
-![Image alt text](images/privSubnet.png)
+![Image alt text](images/PrivSub.png)
 
 Click 'Paste public keys'. Paste your public SSH key that you generated from Lab 1:
 
-![Image alt text](images/privSSH.png)
+![Image alt text](images/PrivSSH.png)
 
 Now click the 'Create' button at the bottom left of your screen to create the instnace:
 
-![Image alt text](images/privCreate.png)
+![Image alt text](images/PrivCreate.png)
 
 Ensure your Instance is active by seeing the box has turned green & says 'RUNNING' underneath:
 
-![Image alt text](images/privFinished.png)
+![Image alt text](images/PrivFinished.png)

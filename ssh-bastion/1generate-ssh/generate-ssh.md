@@ -1,94 +1,90 @@
-# Title of the Lab
+# Create SSH keys using Oracle Cloud Shell
 
 ## Introduction
 
-*Describe the lab in one or two sentences, for example:* This lab walks you through the steps to ...
+The SSH (Secure Shell) protocol is a method for secure remote login from one computer to another. SSH enables secure system administration and file transfers over insecure networks using encryption to secure the connections between endpoints. SSH keys are an important part of securely accessing Oracle Cloud Infrastructure compute instances in the cloud.
 
-Estimated Time: -- minutes
+We recommend you use the *Oracle Cloud Shell* to interface with the OCI compute instance you will create. Oracle Cloud Shell is browser-based, does not require installation or configuration of software on your laptop, and works independently of your network setup.
 
-### About <Product/Technology> (Optional)
-Enter background information here about the technology/feature or product used in this lab - no need to repeat what you covered in the introduction. Keep this section fairly concise. If you find yourself needing more than two sections/paragraphs, please utilize the "Learn More" section.
+*IMPORTANT:  If the SSH key is not created correctly, you will not be able to connect to your environment and will get errors.  Please ensure you create your key properly.*
+
+Estimated Time: 5 minutes
 
 ### Objectives
-
-*List objectives for this lab using the format below*
-
 In this lab, you will:
-* Objective 1
-* Objective 2
-* Objective 3
+- Generate SSH keys using Oracle cloud shell
+- List the content of the public key
 
-### Prerequisites (Optional)
+### Prerequisites
+* An Oracle Cloud Account - please view this workshop's LiveLabs landing page to see which environments are supported.
 
-*List the prerequisites for this lab using the format below. Fill in whatever knowledge, accounts, etc. is needed to complete the lab. Do NOT list each previous lab as a prerequisite.*
+### Oracle Cloud Shell
 
-This lab assumes you have:
-* An Oracle Cloud account
-* All previous labs successfully completed
+The Cloud Shell machine is a small virtual machine running a Bash shell which you access through the OCI Console (Homepage). Cloud Shell comes with a pre-authenticated OCI CLI (Command Line Interface), set to the Console tenancy home page region, as well as up-to-date tools and utilities. To use the Cloud Shell machine, your tenancy administrator must grant the required IAM (Identity and Access Management) policy.
 
+## Task 1: Generate SSH Keys
 
-*This is the "fold" - below items are collapsed by default*
+1. Click the **Navigation Menu** in the upper left, navigate to **Compute**, and select **Instances**.
 
-## Task 1: Generate SSH Key 
+   ![Compute Instances](https://oracle-livelabs.github.io/common/images/console/compute-instances.png " ")
 
-(optional) Task 1 opening paragraph.
+2. Select the compartment you are assigned to (check which compartment you are assigned to on the LiveLabs *Login Info* page). Expand the **root** compartment and then the **Livelabs** compartment. Select the compartment assigned to you.
 
-1. To start the Oracle Cloud shell, go to your Cloud console and click Cloud Shell at the top right of the page
+    ![View Login Info](https://oracle-livelabs.github.io/common/labs/need-help/images/view-login-info.png " ")
 
-	![Image alt text](images/sample1.png)
+   ![Select Compartment](https://oracle-livelabs.github.io/common/labs/need-help/images/select-compartment.png " ")
 
-	> **Note:** Use this format for notes, hints, and tips. Only use one "Note" at a time in a step.
+3. Go to your Cloud console and click **Cloud Shell** at the top right of the page.
 
-2. Once the cloud shell has started, enter the following commands. This will be the key name you will use to connect to any compute instances you create. Press Enter twice for no passphrase.
+    ![Click cloud shell.](https://oracle-livelabs.github.io/common/images/console/cloud-shell.png " ")
 
-  ![Image alt text](images/sample1.png)
+    ![Set up cloud shell.](https://oracle-livelabs.github.io/common/images/console/cloud-shell-setup.png " ")
 
-4. Example with inline navigation icon ![Image alt text](images/sample2.png) click **Navigation**.
+    ![Open cloud shell.](https://oracle-livelabs.github.io/common/images/console/cloud-shell-open.png " ")
 
-5. Example with bold **text**.
+4.  Once the cloud shell has started, enter the following command. Choose the key name you can remember. This will be the key name you will use to connect to any compute instances you create. Press Enter twice for no passphrase.
 
-   If you add another paragraph, add 3 spaces before the line.
+    ````text
+    mkdir .ssh
+    ````
 
-## Task 2: Concise Task Description
+    ````text
+    cd .ssh
+    ````
 
-1. Step 1 - tables sample
+    ````text
+    ssh-keygen -b 2048 -t rsa -f <<sshkeyname>>
+    ````
 
-  Use tables sparingly:
+    >**Note:** The angle brackets <<>> should not appear in your code.
 
-  | Column 1 | Column 2 | Column 3 |
-  | --- | --- | --- |
-  | 1 | Some text or a link | More text  |
-  | 2 |Some text or a link | More text |
-  | 3 | Some text or a link | More text |
+    ![Generate SSH key](./images/cloudshell-ssh-keygen.png " ")
 
-2. You can also include bulleted lists - make sure to indent 4 spaces:
+    ![SSH key output](./images/cloudshell-ssh-keygen-2.png " ")
 
-    - List item 1
-    - List item 2
+5.  Examine the two files that you just created.
 
-3. Code examples
+    ````
+    ls
+    ````
 
-    ```
-    Adding code examples
-  	Indentation is important for the code example to appear inside the step
-    Multiple lines of code
-  	<copy>Enclose the text you want to copy in <copy></copy>.</copy>
-    ```
+    ![Examine files](./images/examine-cloudshell-keys.png " ")
 
-4. Code examples that include variables
+    >**Note:** In the output, there are two files, a *private key:* `cloudshellkey` and a *public key:* `cloudshellkey.pub`. Keep the private key safe and don't share its content with anyone. The public key will be needed for various activities and can be uploaded to certain systems as well as copied and pasted to facilitate secure communications in the cloud.
 
-	```
-  <copy>ssh -i <ssh-key-file></copy>
-  ```
+6. To list the contents of the public key, use the cat command ```cat <<sshkeyname>>.pub```
 
-## Learn More
+    >**Note:** The angle brackets <<>> should not appear in your code.
 
-*(optional - include links to docs, white papers, blogs, etc)*
+    ![Cat in cloud shell](./images/cat-in-cloudshell.png " ")
 
-* [URL text 1](http://docs.oracle.com)
-* [URL text 2](http://docs.oracle.com)
+7.  When pasting the key into the compute instance in future labs, make sure that you remove any hard returns that may have been added when copying. *The .pub key should be one line.*
+
+    ![Copy public key](./images/copy-publickey-cloudshell.png " ")
+
+You may now **proceed to the next lab**.
 
 ## Acknowledgements
-* **Author** - <Name, Title, Group>
-* **Contributors** -  <Name, Group> -- optional
-* **Last Updated By/Date** - <Name, Month Year>
+* **Author** - Dan Kingsley, Enablement Specialist, OSPA
+* **Contributors** - Arabella Yao, Database Product Management
+* **Last Updated By/Date** - Carmen Berdant, Mar 2024
