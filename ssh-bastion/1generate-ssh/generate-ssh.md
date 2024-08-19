@@ -82,9 +82,9 @@ Task 1: Generate SSH Keys
 
     ![Copy public key](./images/copy-publickey-cloudshell.png " ")
 
-You may now **proceed to the next lab**.
+You may now **proceed to the next lab.**
 
 ## Acknowledgements
-* **Author** - Dan Kingsley, Enablement Specialist, OSPA
-* **Contributors** - Arabella Yao, Database Product Management
+* **Author** - Dan Kingsley, Enablement Specialist, OSPA; Olivia Maxwell, Cloud Engineer
+* **Contributors** - Arabella Yao, Database Product Management; Olivia Maxwell, Cloud Engineer
 * **Last Updated By/Date** - Carmen Berdant, Mar 2024

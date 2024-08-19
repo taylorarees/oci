@@ -36,14 +36,18 @@ Task 1: SSH into instances
 2. Navigate to ssh folder within Cloud Shell 
 
 ```
-cd .ssh
+<copy>
+cd .ssh 
+</copy>
 ```
 
 3. SSH into Bastion Host to ensure connection.  <br><br>
 *be sure to replace text found in <> with their correct values*
 
 ```
+<copy>
 ssh -i <private_ssh_key> opc@<BastionHost_public_ip_address> 
+</copy>
 ```
 
   ![SSH into Bastion](images/ssh.png)
@@ -52,13 +56,17 @@ ssh -i <private_ssh_key> opc@<BastionHost_public_ip_address>
 Navigate to SSH files
 
 ```
+<copy>
 cd .ssh
+</copy>
 ```
 
 Create a new file called private_key
 
 ```
+<copy>
 vim private_key
+</copy>
 ```
 
 Paste the private key generated in Lab 1
@@ -67,7 +75,9 @@ Save the changes made to private_key file
 hit esc key followed by the command bellow 
 
 ```
+<copy>
 :wq!
+</copy>
 ```
 hit the Return key
 
@@ -79,7 +89,9 @@ You can use the command **ls** to check to make sure the new file exists
 *be sure to replace the private ip address with the actual IP address for your instance*
 
 ```
+<copy>
 ssh -i private_key opc@<private-1_private_ip_address> 
+</copy>
 ```
 
 You should now see that you have successfully navigated to the instnace private-1 

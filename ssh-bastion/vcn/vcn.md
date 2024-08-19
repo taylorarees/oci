@@ -81,6 +81,9 @@ It will take a moment to create the VCN and a progress screen will show the work
   ![Use VCN Wizard](images/view-vcn.png)
 
 5. You have successfully created a Virtual Cloud Network! You can see the details of the VCN. 
+
+You may now **proceed to the next lab.**
+
 ## Alternative Task: Create VCN without VCN Wizard
 
 1. Navigate to Netowrking and select Virtual Cloud Networks
@@ -232,7 +235,7 @@ confirm that it has the same rules that we just created for the private subnet
 
 Your VCN should now look identical to a VCN created with the VCN Wizard!
 
-You can now proceed to the next lab.
+You may now **proceed to the next lab.**
 
 ## Learn More
 
