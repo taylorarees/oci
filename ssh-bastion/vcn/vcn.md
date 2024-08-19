@@ -10,7 +10,7 @@ Each subnet consists of a contiguous range of IP addresses (for IPv4 and IPv6, i
 
 In this lab we will be using the VCN Wizard to create our VCN, if you would like to skip using the wizard you can follow the alternative task at the end of this lab. 
 
-## Oracle Virtual Cloud Networks
+### Oracle Virtual Cloud Networks
 
 To learn more about Oracle's Virtual Cloud Networks, review the documentation [here.](https://docs.oracle.com/en-us/iaas/Content/Network/Tasks/Overview_of_VCNs_and_Subnets.htm) 
 

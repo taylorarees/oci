@@ -22,7 +22,7 @@ In this lab, you will:
 
 The Cloud Shell machine is a small virtual machine running a Bash shell which you access through the OCI Console (Homepage). Cloud Shell comes with a pre-authenticated OCI CLI (Command Line Interface), set to the Console tenancy home page region, as well as up-to-date tools and utilities. To use the Cloud Shell machine, your tenancy administrator must grant the required IAM (Identity and Access Management) policy.
 
-Task 1: Generate SSH Keys
+## Task 1: Generate SSH Keys
 
 1. Click the **Navigation Menu** in the upper left, navigate to **Compute**, and select **Instances**.
 
@@ -50,11 +50,11 @@ Task 1: Generate SSH Keys
     </copy>
     ```
 
-    ````text
+    ```
     <copy>
     cd .ssh
     </copy>
-    ````
+    ```
 
     ```
     <copy>
