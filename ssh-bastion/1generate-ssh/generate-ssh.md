@@ -44,17 +44,23 @@ Task 1: Generate SSH Keys
 
 4.  Once the cloud shell has started, enter the following command. Choose the key name you can remember. This will be the key name you will use to connect to any compute instances you create. Press Enter twice for no passphrase.
 
-    ````text
+    ```
+    <copy>
     mkdir .ssh
-    ````
+    </copy>
+    ```
 
     ````text
+    <copy>
     cd .ssh
+    </copy>
     ````
 
-    ````text
+    ```
+    <copy>
     ssh-keygen -b 2048 -t rsa -f <<sshkeyname>>
-    ````
+    </copy>
+    ```
 
     >**Note:** The angle brackets <<>> should not appear in your code.
 
@@ -64,9 +70,12 @@ Task 1: Generate SSH Keys
 
 5.  Examine the two files that you just created.
 
-    ````
+    ```
+    <copy>
     ls
-    ````
+    </copy>
+    ```
+
 
     ![Examine files](./images/examine-cloudshell-keys.png " ")
 

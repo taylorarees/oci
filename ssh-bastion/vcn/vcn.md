@@ -31,7 +31,7 @@ This lab assumes you have:
 * An Oracle Cloud account
 * All previous labs successfully completed
 
-Task 1: Create a compartment
+## Task 1: Create a compartment
 
 
 1. Navigate to Identity & Security and select Compartments
@@ -49,7 +49,7 @@ Task 1: Create a compartment
 3. You have just created a compartment!
 
 
-Task 2: Create a VCN
+## Task 2: Create a VCN
 
 In this task we will be using the VCN Wizard, if you would like to create the VCN mannuall, feel free to skip to the alternative task below. 
 
