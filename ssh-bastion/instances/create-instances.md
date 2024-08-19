@@ -4,10 +4,10 @@
 
 In this lab you will create your Public and Private compute instances. The Public instance will be your BastionHost, that you will later withing the lab, secure SSH access to. We will walk you through creating these instances using the OCI console.
 
-Estimated Time: -- minutes
+Estimated Time: 15 minutes
 
 ### Oracle Compute Instances
-A compute instance is a virtual machine (VM), which is an independent computing environment that runs on top of physical hardware. When you create a compute instance, you can select the most apropiate type of compute instance for your applications based on characteristics such as number of CPUs, amount of memory, and network resources. After you create a compute instance, you can access it securely from your computer, restart it, attach and detach volumes, and delete it when you're done with it. 
+A compute instance is a virtual machine (VM), which is an independent computing environment that runs on top of physical hardware. When you create a compute instance, you can select the most appropriate type of compute instance for your applications based on characteristics such as number of CPUs, amount of memory, and network resources. After you create a compute instance, you can access it securely from your computer, restart it, attach and detach volumes, and delete it when you're done with it. 
 
 To learn more about Oracle's Compute Instances, review the documentation [here.](https://docs.oracle.com/en-us/iaas/compute-cloud-at-customer/topics/compute/compute-instances.htm#:~:text=Compute%20Cloud%40Customer%20lets%20you,are%20isolated%20from%20each%20other.) 
 
@@ -31,22 +31,22 @@ Task 1: Create Public Compute Instance named BastionHost
 
 Navigate to Compute Instances through the Oracle Cloud Console create your Public and Private Instances
 
-1. Click on the hamburger icon ![Image alt text](images/sample2.png) in the top left corner of the OCI console Home page. 
+1. Click on the hamburger icon ![Hamburger Icon](images/sample2.png) in the top left corner of the OCI console Home page. 
 
-	![Image alt text](images/home.png)
+	![OCI Home Page](images/home.png)
 
 	
-2. After clicking the hamburger icon ![Image alt text](images/sample2.png), select 'Compute'. Within the Compute tab, select 'Instances'.
+2. After clicking the hamburger icon ![Hamburger Icon](images/sample2.png), select 'Compute'. Within the Compute tab, select 'Instances'.
 
-  ![Image alt text](images/consoleCompute.png)
+  ![Compute Instance](images/consoleCompute.png)
 
 3. Before creating your Public compute instnace, you need to ensure that you are in the correct compartment. The compartment that we previously created is called 'Demo'. You can see in the picture below that we are in the correct 'Demo' compartment.
 
-![Image alt text](images/consoleCompartment.png)
+![Verify Correct Compartment](images/consoleCompartment.png)
 
 4. Click 'Create Instance'.
 
-![Image alt text](images/createInstance.png)
+![Create Instance](images/createInstance.png)
 
 5. Create your public Bastion Host Instance. 
 
